@@ -29,7 +29,8 @@
   },
 
   "dependencies": {
-    "prop-types": "^15.5.9"
+    "prop-types": "^15.7.2",
+    "react-style-proptype": "^3.2.2"
   },
 
   "peerDependencies": {

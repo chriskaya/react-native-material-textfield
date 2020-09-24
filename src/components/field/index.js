@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import StylePropType from 'react-style-proptype';
 import React, { PureComponent } from 'react';
 import {
   View,
@@ -83,9 +84,9 @@ export default class TextField extends PureComponent {
 
     labelOffset: Label.propTypes.offset,
 
-    labelTextStyle: PropTypes.objectOf(PropTypes.string),
-    titleTextStyle: PropTypes.objectOf(PropTypes.string),
-    affixTextStyle: PropTypes.objectOf(PropTypes.string),
+    labelTextStyle: StylePropType,
+    titleTextStyle: StylePropType,
+    affixTextStyle: StylePropType,
 
     tintColor: PropTypes.string,
     textColor: PropTypes.string,
@@ -116,8 +117,8 @@ export default class TextField extends PureComponent {
     prefix: PropTypes.string,
     suffix: PropTypes.string,
 
-    containerStyle: PropTypes.objectOf(PropTypes.string),
-    inputContainerStyle: PropTypes.objectOf(PropTypes.string),
+    containerStyle: StylePropType,
+    inputContainerStyle: StylePropType,
   };
 
   static inputContainerStyle = styles.inputContainer;
